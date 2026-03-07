@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Document Title + Icon -->
+    <title>Gallery</title>
+    <link rel="Icon" type="image/x-icon" href="images/icons/young_dog.svg">
+
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/gallery.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <!-- Icon + Title -->
+        <h2 class="header-title">
+            <a href="index.html" class="home-link">
+                <img src="images/icons/paw.svg" alt="Snazzy Paws Logo" class="nav-icon">
+
+                <span class="full-title">Snazzy Paws Grooming</span>
+                <span class="short-title">Snazzy Paws</span>
+            </a>
+        </h2>
+
+        <!-- Navigation Buttons -->
+        <div class="button-group desktop-nav">
+            <button id="theme-toggle" class="theme-toggle-btn">
+                <img src="images/icons/moon.svg" alt="Toggle dark mode" class="theme-icon">
+            </button>
+            <a href="gallery.html" class="button">Gallery</a>
+            <a href="services.html" class="button">View Services</a>
+            <a href="contact.html" class="button">Contact Us</a>
+            <a href="booking.html" class="button dark">Book Now</a>
+        </div>
+
+        <!-- Mobile dropdown button -->
+        <div class="mobile-nav">
+            <button id="theme-toggle-mobile" class="theme-toggle-btn">
+                <img src="images/icons/moon.svg" alt="Toggle dark mode" class="theme-icon">
+            </button>
+
+            <button id="mobile-menu-toggle">☰</button>
+            <div id="mobile-menu" class="mobile-menu hidden">
+                <a href="gallery.html" class="button">Gallery</a>
+                <a href="services.html" class="button">View Services</a>
+                <a href="contact.html" class="button">Contact Us</a>
+                <a href="booking.html" class="button dark">Book Now</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Core Page Content -->
+    <main>
+        <!-- Welcome Section (introduction and initial image) -->
+        <section>
+            <div class="section-inner center-hero">
+                <h1 class="center-text">Like our gallery?</h1>
+                <p class="center-text header-margin">See it on your pet today after booking!</P>
+
+                <div class="button-group">
+                    <a href="services.html" class="button dark">Services</a>
+                    <a href="contact.html" class="button">Contact Us</a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ── Our Work (carousel) ── -->
+        <section class="gallery-carousel-section">
+            <div class="section-inner">
+                <h2 class="center-text header-margin">Our Work</h2>
+
+                <!-- Carousel: id referenced by gallery.js -->
+                <div id="work-carousel">
+                    <div class="carousel-outer">
+                        <button class="carousel-arrow prev" aria-label="Previous">&#8249;</button>
+                        <div class="carousel-track-wrapper">
+                            <!-- Slides injected by gallery.js -->
+                            <div class="carousel-track"></div>
+                        </div>
+                        <button class="carousel-arrow next" aria-label="Next">&#8250;</button>
+                    </div>
+                    <div class="carousel-dots"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Meet the Team -->
+        <section class="dark">
+            <div class="section-inner">
+                <h2 class="center-text header-margin">Meet the Team</h2>
+                <div id="team-section"></div>
+            </div>
+
+        </section>
+
+        <!-- Our Salon -->
+        <section>
+            <div class="section-inner">
+                <h2 class="center-text header-margin">Our Salon</h2>
+                <div id="salon-section"></div>
+            </div>
+        </section>
+
+        <div class="scroll-top-wrapper">
+            <button class="scroll-top-btn" id="scroll-top-btn"
+                onclick="window.scrollTo({top:0, behavior:'smooth'})">↑</button>
+        </div>
+    </main>
+
+    <!-- Footer Bar -->
+    <footer>
+        <p>©2026 Snazzy Paws Grooming, All rights reserved.</p>
+        <p>Mon-Fri: 8am-6pm · Sat: 9am-2pm · Sun: Closed</p>
+        <p>LOG-IN</p>
+    </footer>
+
+    <!-- Link JS -->
+    <script src="js/main.js"></script>
+    <script src="js/gallery.js"></script>
+</body>
+
+</html>

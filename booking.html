@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Document Title + Icon -->
+    <title>Booking</title>
+    <link rel="Icon" type="image/x-icon" href="images/icons/young_dog.svg">
+
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <!-- Icon + Title -->
+        <h2 class="header-title">
+            <a href="index.html" class="home-link">
+                <img src="images/icons/paw.svg" alt="Snazzy Paws Logo" class="nav-icon">
+
+                <span class="full-title">Snazzy Paws Grooming</span>
+                <span class="short-title">Snazzy Paws</span>
+            </a>
+        </h2>
+
+        <!-- Navigation Buttons -->
+        <div class="button-group desktop-nav">
+            <button id="theme-toggle" class="theme-toggle-btn">
+                <img src="images/icons/moon.svg" alt="Toggle dark mode" class="theme-icon">
+            </button>
+            <a href="gallery.html" class="button">Gallery</a>
+            <a href="services.html" class="button">View Services</a>
+            <a href="contact.html" class="button">Contact Us</a>
+            <a href="booking.html" class="button dark">Book Now</a>
+        </div>
+
+        <!-- Mobile dropdown button -->
+        <div class="mobile-nav">
+            <button id="theme-toggle-mobile" class="theme-toggle-btn">
+                <img src="images/icons/moon.svg" alt="Toggle dark mode" class="theme-icon">
+            </button>
+
+            <button id="mobile-menu-toggle">☰</button>
+            <div id="mobile-menu" class="mobile-menu hidden">
+                <a href="gallery.html" class="button">Gallery</a>
+                <a href="services.html" class="button">View Services</a>
+                <a href="contact.html" class="button">Contact Us</a>
+                <a href="booking.html" class="button dark">Book Now</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Core Page Content -->
+    <main>
+        <!-- Welcome Section (introduction and initial image) -->
+        <section>
+            <div class="section-inner center-hero">
+                <h1 class="center-text">Thinking about booking?</h1>
+                <p class="center-text header-margin">Make sure to view our services first!</P>
+
+                <div class="button-group">
+                    <a href="services.html" class="button dark">Services</a>
+                    <a href="contact.html" class="button">Contact Us</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Care Guidelines & Warnings Section -->
+        <section>
+            <div class="section-inner">
+                <h2 class="center-text header-margin">Care Guidelines & Warnings</h2>
+
+                <!-- Grid of Cards-->
+                <div class="card-grid">
+                    <div class="service-card">
+                        <h3 class="center-text quarter-margin">Breed Specifics</h3>
+                        <p class="center-text">Certain breeds may require alternative de-shedding techniques.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <h3 class="center-text quarter-margin">Age Considerations</h3>
+                        <p class="center-text">Seniors can have frequent rest breaks.</p>
+                    </div>
+
+                    <div class="service-card center-text">
+                        <h3 class="center-text quarter-margin">Temperament</h3>
+                        <p class="center-text">Inform staff if your pet is prone to anxiety,
+                            aggressiveness, or loud noises.
+                        </p>
+                    </div>
+
+                    <div class="service-card center-text">
+                        <h3 class="center-text quarter-margin">Medical Conditions</h3>
+                        <p class="center-text">Disclose medical conditions or recent surgeries before booking.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking Form Section -->
+        <section class="dark">
+            <div class="section-inner">
+                <h2 class="center-text header-margin">Booking Form</h2>
+
+                <!-- Grid of Cards-->
+                <form id="booking-form">
+                    <div class="card-grid">
+                        <div class="booking-card">
+                            <div class="booking-group">
+                                <h3 id="start" class="quarter-margin">Pet Information:</h3>
+
+                                <div class="booking-field">
+                                    <label for="dog-name">Name:</label>
+                                    <input type="text" id="dog-name" name="dog-name" required minlength="2">
+                                </div>
+
+                                <div class="booking-field">
+                                    <label for="age">Age:</label>
+                                    <div class="number-input">
+                                        <button type="button" class="number-btn"
+                                            onclick="this.parentNode.querySelector('input').stepDown(); updateSummary()">−</button>
+
+                                        <input type="number" id="age" required min="1" max="40" value="1"
+                                            onkeydown="return ['Backspace','Tab','ArrowLeft','ArrowRight'].includes(event.key) || /[0-9]/.test(event.key)">
+
+                                        <button type="button" class="number-btn"
+                                            onclick="this.parentNode.querySelector('input').stepUp(); updateSummary()">+</button>
+                                    </div>
+                                </div>
+
+                                <div class="booking-field">
+                                    <label for="breed">Breed:</label>
+                                    <input type="text" id="breed" name="breed" required minlength="2">
+                                </div>
+
+                                <div class="booking-field">
+                                    <label for="medical" class="label-wider">Medical Needs (+$30):</label>
+                                    <input type="checkbox" id="medical" name="medical">
+                                </div>
+
+                                <div class="booking-field">
+                                    <label for="package-type" class="label-wide">Package:</label>
+                                    <select id="package-type" name="package-type" required>
+                                        <option value="" disabled selected>Select a type</option>
+                                        <option value="haircut">Haircut - $25</option>
+                                        <option value="spa">Spa - $30</option>
+                                        <option value="brushing">Brushing - $20</option>
+                                        <option value="full">Full - $50</option>
+                                    </select>
+                                </div>
+
+                                <br>
+
+                                <div class="booking-field stacked">
+                                    <label for="extra">Additional Information:</label>
+                                    <textarea id="extra" name="extra" maxlength="250"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="booking-group">
+                                <h3 class="quarter-margin">Your Information:</h3>
+
+                                <div class="booking-field">
+                                    <label for="client-name">Name:</label>
+                                    <input type="text" id="client-name" name="client-name" required minlength="2">
+                                </div>
+
+                                <div class="booking-field">
+                                    <label for="dob" class="label-wide">Date of Birth:</label>
+                                    <input type="date" id="dob" required>
+                                </div>
+
+                                <div class="booking-field">
+                                    <label for="email">Email:</label>
+                                    <input type="text" id="email" name="email" required minlength="4">
+                                </div>
+
+                                <div class="booking-field">
+                                    <label for="phone">Phone:</label>
+                                    <input type="text" id="phone" name="phone" required minlength="7"
+                                        onkeydown="return ['Backspace','Tab','ArrowLeft','ArrowRight','+','Space'].includes(event.key) || /[0-9]/.test(event.key)">
+                                </div>
+
+                                <br>
+
+                                <div class="booking-field stacked">
+                                    <label for="datetime">Appointment Date & Time:</label>
+                                    <input type="datetime-local" id="datetime" class="appointment-date-input"
+                                        required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="booking-card vertical">
+                            <h3 id="addons" class="quarter-margin">Add-on Options:</h3>
+
+                            <!-- Grid of Cards-->
+                            <div class="card-grid minimal-grid half-margin">
+                                <div class="service-card minimal addon-card"
+                                    onclick="this.querySelector('.addon-checkbox').click()">
+                                    <input type="checkbox" id="addon-flea" class="addon-checkbox"
+                                        onclick="event.stopPropagation()">
+                                    <p>$20 - Flea & Tick</p>
+                                </div>
+                                <div class="service-card minimal addon-card"
+                                    onclick="this.querySelector('.addon-checkbox').click()">
+                                    <input type="checkbox" id="addon-deshed" class="addon-checkbox"
+                                        onclick="event.stopPropagation()">
+                                    <p>$20 - De-shedding</p>
+                                </div>
+                                <div class="service-card minimal addon-card"
+                                    onclick="this.querySelector('.addon-checkbox').click()">
+                                    <input type="checkbox" id="addon-ear" class="addon-checkbox"
+                                        onclick="event.stopPropagation()">
+                                    <p>$20 - Ear Cleaning</p>
+                                </div>
+                                <div class="service-card minimal addon-card"
+                                    onclick="this.querySelector('.addon-checkbox').click()">
+                                    <input type="checkbox" id="addon-nail" class="addon-checkbox"
+                                        onclick="event.stopPropagation()">
+                                    <p>$20 - Nail Trimming</p>
+                                </div>
+                                <div class="service-card minimal addon-card"
+                                    onclick="this.querySelector('.addon-checkbox').click()">
+                                    <input type="checkbox" id="addon-teeth" class="addon-checkbox"
+                                        onclick="event.stopPropagation()">
+                                    <p>$20 - Teeth Brushing</p>
+                                </div>
+                                <div class="service-card minimal addon-card"
+                                    onclick="this.querySelector('.addon-checkbox').click()">
+                                    <input type="checkbox" id="addon-massage" class="addon-checkbox"
+                                        onclick="event.stopPropagation()">
+                                    <p>$20 - Massage</p>
+                                </div>
+                            </div>
+
+                            <h3 class="quarter-margin">Booking Details:</h3>
+
+                            <p class="quarter-margin mobile-margin">Service Type: <span id="summary-service">—</span>
+                            </p>
+                            <p class="quarter-margin mobile-margin">Appointment Details: <span
+                                    id="summary-appointment">—</span></p>
+                            <p class="quarter-margin mobile-margin">Add-ons: <span id="summary-addons">No add-ons</span>
+                            </p>
+                            <p class="half-margin">Total Cost: <span id="summary-cost">$0</span></p>
+
+                            <button type="submit" class="button dark submit-btn">Book Appointment</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Bar -->
+    <footer>
+        <p>©2026 Snazzy Paws Grooming, All rights reserved.</p>
+        <p>Mon-Fri: 8am-6pm · Sat: 9am-2pm · Sun: Closed</p>
+        <p>LOG-IN</p>
+    </footer>
+
+
+    <!-- Link JS -->
+    <script src="js/main.js"></script>
+    <script src="js/booking.js"></script>
+</body>
+
+</html>
