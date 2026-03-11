@@ -59,7 +59,7 @@
     background-color: var(--bg-input)
 }
 
-[data-theme="dark"] a.button.dark {
+[data-theme="dark"] a.w3-button.dark {
     border: 1px solid var(--border-light)
 }
 
@@ -271,7 +271,7 @@ header .button-group {
     margin-top: 0
 }
 
-a.button {
+a.w3-button {
     padding: 1rem 2rem !important;
     border-radius: 4px;
     cursor: pointer;
@@ -287,21 +287,23 @@ a.button {
     box-sizing: unset;
 }
 
-a.button.dark {
+a.w3-button.dark
+{
     background-color: var(--bg-dark);
     color: var(--text-dark-bg);
-    border: none
+    border: 1px solid #fff0;
 }
 
-a.button:hover {
+a.w3-button:hover {
     background-color: var(--bg-button-hover) !important;
     opacity: .9
 }
 
-a.button.dark {
-    background-color: var(--bg-dark);
-    color: var(--text-dark-bg);
-    border: 1px solid #fff0
+a.w3-button.dark:hover
+{
+    color: var(--text-dark-bg) !important;
+    background-color: var(--bg-dark) !important;
+    opacity: .9;
 }
 
 .split {
