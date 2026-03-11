@@ -336,7 +336,7 @@ a.button.dark {
 }
 
 .header-margin {
-    margin-bottom: 3rem
+    margin-bottom: 3rem !important
 }
 
 .half-margin {
