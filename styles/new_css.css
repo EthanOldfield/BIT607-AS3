@@ -69,6 +69,11 @@
     padding: 0
 }
 
+html
+{
+    font-size: 16px !important;
+}
+
 html,
 body {
     font-family: Arial, sans-serif !important;
@@ -80,6 +85,7 @@ h1, h2, h3, h4, h5, h6
     font-family: Arial, sans-serif !important;
     font-weight: bold !important;
     line-height: normal !important;
+    margin: 0px !important
 }
 
 body {
@@ -89,12 +95,12 @@ body {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 3rem !important;;
     color: var(--text-primary)
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 2rem !important;;
     color: var(--text-primary)
 }
 
@@ -104,7 +110,7 @@ h4 {
 }
 
 p {
-    font-size: 1.2rem;
+    font-size: 1.2rem !important;;
     color: var(--text-secondary)
 }
 
@@ -137,6 +143,7 @@ header.w3-bar .w3-bar-item
     float: none !important;
     display: flex !important;
     align-items: center !important;
+    
 }
 
 /* Disable w3-bar positioning (it's very ugly) */
@@ -159,7 +166,7 @@ footer {
 
 footer p {
     color: var(--text-muted);
-    font-size: .8rem
+    font-size: .8rem !important;
 }
 
 .home-link {
@@ -246,7 +253,7 @@ section.dark {
     padding: 1rem 2rem;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 1rem !important;
     white-space: nowrap;
     background-color: var(--bg-dark);
     color: var(--text-dark-bg);
@@ -265,15 +272,19 @@ header .button-group {
 }
 
 a.button {
-    padding: 1rem 2rem;
+    padding: 1rem 2rem !important;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 1rem;
-    white-space: nowrap;
+    font-size: 1rem !important;
+    white-space: nowrap !important;
     background-color: var(--bg-button-light);
     color: var(--text-primary);
     border: 1px solid var(--border-light);
-    text-decoration: none
+    text-decoration: none;
+
+    user-select: unset;
+    display: inherit;
+    box-sizing: unset;
 }
 
 a.button.dark {
@@ -283,7 +294,7 @@ a.button.dark {
 }
 
 a.button:hover {
-    background-color: var(--bg-button-hover);
+    background-color: var(--bg-button-hover) !important;
     opacity: .9
 }
 
@@ -395,7 +406,7 @@ section.dark .service-card {
 }
 
 .service-card p {
-    font-size: 1rem
+    font-size: 1rem !important;
 }
 
 .service-card ul {
@@ -410,7 +421,7 @@ section.dark .service-card {
 
 .service-card li::marker {
     color: var(--text-secondary);
-    font-size: .7em
+    font-size: .7rem !important;
 }
 
 .service-card .placeholder-image {
@@ -436,7 +447,7 @@ section.dark .service-card {
 
 .addon-card label {
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 1rem !important;
     color: var(--accent)
 }
 
@@ -459,12 +470,12 @@ section.dark .service-card {
     position: absolute;
     top: 0;
     right: .75rem;
-    font-size: 1.5rem;
+    font-size: 1.5rem !important;
     color: var(--text-muted)
 }
 
 .click-hint {
-    font-size: .85rem;
+    font-size: .85rem !important;
     color: var(--text-muted);
     margin-top: .5rem
 }
@@ -494,7 +505,7 @@ img.placeholder-image {
 }
 
 .image-credit {
-    font-size: .8rem;
+    font-size: .8rem !important;
     color: var(--text-credit);
     margin-top: 0
 }
@@ -535,7 +546,7 @@ img.placeholder-image {
 .status-card {
     width: fit-content;
     border-radius: 12px;
-    font-size: .9rem;
+    font-size: .9rem !important;
     font-weight: 600;
     padding: .5rem
 }
@@ -562,7 +573,7 @@ img.placeholder-image {
     align-items: center;
     padding: .5rem 0;
     border-bottom: 1px solid var(--border-light);
-    font-size: 1rem;
+    font-size: 1rem !important;
     color: var(--text-primary)
 }
 
@@ -614,12 +625,12 @@ img.placeholder-image {
 
 .contact-card-title {
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 1rem !important;
     color: var(--text-primary)
 }
 
 .contact-card-detail {
-    font-size: .95rem;
+    font-size: .95rem !important;
     color: var(--text-secondary)
 }
 
@@ -706,7 +717,7 @@ img.placeholder-image {
     height: 1.75rem;
     width: 100%;
     padding-left: .5rem;
-    font-size: 1rem
+    font-size: 1rem !important;
 }
 
 .booking-field.stacked {
@@ -762,7 +773,7 @@ img.placeholder-image {
     text-align: center;
     border: none;
     outline: none;
-    font-size: 1rem;
+    font-size: 1rem !important;
     padding: .4rem 0;
     -moz-appearance: textfield;
     width: 0
@@ -779,7 +790,7 @@ img.placeholder-image {
     border: none;
     border-radius: 0;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 1rem !important;
     color: var(--text-primary)
 }
 
@@ -820,7 +831,7 @@ img.placeholder-image {
     border: none;
     background-color: var(--bg-dark);
     color: var(--text-dark-bg);
-    font-size: 1.2rem;
+    font-size: 1.2rem !important;
     cursor: pointer;
     box-shadow: 0 2px 8px rgb(0 0 0 / .2)
 }
@@ -828,7 +839,7 @@ img.placeholder-image {
 .pricing-table {
     width: 100%;
     border-collapse: collapse;
-    font-size: 1rem;
+    font-size: 1rem !important;
     color: var(--text-primary)
 }
 
@@ -882,6 +893,15 @@ footer.w3-bar::after
     display: none !important;
 }
 
+header.w3-bar .w3-bar-item
+{
+    padding: 0 !important;
+    float: none !important;
+    display: flex !important;
+    align-items: center !important;
+    width: auto !important;
+}
+
 
 @media (max-width:768px) {
     .scroll-top-btn.visible {
@@ -891,7 +911,7 @@ footer.w3-bar::after
     }
 
     .header-title {
-        font-size: 1.5rem
+        font-size: 1.5rem !important;
     }
 
     .full-title {
@@ -934,7 +954,7 @@ footer.w3-bar::after
         border: none;
         border-radius: 0;
         border-bottom: 1px solid var(--border-light);
-        font-size: 1rem
+        font-size: 1rem !important;
     }
 
     .mobile-menu a:last-child {
@@ -944,7 +964,7 @@ footer.w3-bar::after
     #mobile-menu-toggle {
         background: none;
         border: none;
-        font-size: 1.5rem;
+        font-size: 1.5rem !important;
         cursor: pointer;
         color: var(--text-primary)
     }
@@ -958,7 +978,7 @@ footer.w3-bar::after
     }
 
     h1 {
-        font-size: 2rem
+        font-size: 2rem !important;
     }
 
     .center-text-mobile {
@@ -1032,7 +1052,7 @@ footer.w3-bar::after
         justify-content: space-between;
         border: none;
         border-bottom: 1px solid var(--border);
-        font-size: .95rem
+        font-size: .95rem !important;
     }
 
     .pricing-table td:last-child {
