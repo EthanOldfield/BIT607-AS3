@@ -4,94 +4,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Snazzy Paws Grooming Booking.">
 
     <!-- Document Title + Icon -->
     <title>Booking</title>
     <link rel="Icon" type="image/x-icon" href="images/icons/young_dog.svg">
 
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <link rel="stylesheet" href="styles/new_css.css">
 </head>
 
 <body>
     <!-- Navigation Bar -->
-    <header>
+    <header class="w3-bar">
         <!-- Icon + Title -->
-        <h2 class="header-title">
+        <h2 class="header-title w3-bar-item">
             <a href="index.html" class="home-link">
                 <img src="images/icons/paw.svg" alt="Snazzy Paws Logo" class="nav-icon">
-
                 <span class="full-title">Snazzy Paws Grooming</span>
                 <span class="short-title">Snazzy Paws</span>
             </a>
         </h2>
 
         <!-- Navigation Buttons -->
-        <div class="button-group desktop-nav">
+        <div class="button-group desktop-nav w3-bar-item">
             <button id="theme-toggle" class="theme-toggle-btn">
                 <img src="images/icons/moon.svg" alt="Toggle dark mode" class="theme-icon">
             </button>
-            <a href="gallery.html" class="button">Gallery</a>
-            <a href="services.html" class="button">View Services</a>
-            <a href="contact.html" class="button">Contact Us</a>
-            <a href="booking.html" class="button dark">Book Now</a>
+            <a href="gallery.html" class="button w3-button">Gallery</a>
+            <a href="services.html" class="button w3-button">View Services</a>
+            <a href="contact.html" class="button w3-button">Contact Us</a>
+            <a href="booking.html" class="button dark w3-button">Book Now</a>
         </div>
 
         <!-- Mobile dropdown button -->
-        <div class="mobile-nav">
+        <div class="mobile-nav w3-bar-item">
             <button id="theme-toggle-mobile" class="theme-toggle-btn">
                 <img src="images/icons/moon.svg" alt="Toggle dark mode" class="theme-icon">
             </button>
-
             <button id="mobile-menu-toggle">☰</button>
             <div id="mobile-menu" class="mobile-menu hidden">
-                <a href="gallery.html" class="button">Gallery</a>
-                <a href="services.html" class="button">View Services</a>
-                <a href="contact.html" class="button">Contact Us</a>
-                <a href="booking.html" class="button dark">Book Now</a>
+                <a href="gallery.html" class="button w3-button">Gallery</a>
+                <a href="services.html" class="button w3-button">View Services</a>
+                <a href="contact.html" class="button w3-button">Contact Us</a>
+                <a href="booking.html" class="button dark w3-button">Book Now</a>
             </div>
         </div>
     </header>
 
     <!-- Core Page Content -->
     <main>
-        <!-- Welcome Section (introduction and initial image) -->
-        <section>
+        <!-- Welcome Section -->
+        <section class="w3-container">
             <div class="section-inner center-hero">
                 <h1 class="center-text">Thinking about booking?</h1>
-                <p class="center-text header-margin">Make sure to view our services first!</P>
+                <p class="center-text header-margin">Make sure to view our services first!</p>
 
                 <div class="button-group">
-                    <a href="services.html" class="button dark">Services</a>
-                    <a href="contact.html" class="button">Contact Us</a>
+                    <a href="services.html" class="button dark w3-button">Services</a>
+                    <a href="contact.html" class="button w3-button">Contact Us</a>
                 </div>
             </div>
         </section>
 
         <!-- Care Guidelines & Warnings Section -->
-        <section>
+        <section class="w3-container">
             <div class="section-inner">
                 <h2 class="center-text header-margin">Care Guidelines & Warnings</h2>
 
                 <!-- Grid of Cards-->
                 <div class="card-grid">
-                    <div class="service-card">
+                    <div class="service-card w3-card">
                         <h3 class="center-text quarter-margin">Breed Specifics</h3>
                         <p class="center-text">Certain breeds may require alternative de-shedding techniques.</p>
                     </div>
 
-                    <div class="service-card">
+                    <div class="service-card w3-card">
                         <h3 class="center-text quarter-margin">Age Considerations</h3>
                         <p class="center-text">Seniors can have frequent rest breaks.</p>
                     </div>
 
-                    <div class="service-card center-text">
+                    <div class="service-card w3-card center-text">
                         <h3 class="center-text quarter-margin">Temperament</h3>
                         <p class="center-text">Inform staff if your pet is prone to anxiety,
                             aggressiveness, or loud noises.
                         </p>
                     </div>
 
-                    <div class="service-card center-text">
+                    <div class="service-card w3-card center-text">
                         <h3 class="center-text quarter-margin">Medical Conditions</h3>
                         <p class="center-text">Disclose medical conditions or recent surgeries before booking.</p>
                     </div>
@@ -100,14 +100,13 @@
         </section>
 
         <!-- Booking Form Section -->
-        <section class="dark">
+        <section class="dark w3-container">
             <div class="section-inner">
                 <h2 class="center-text header-margin">Booking Form</h2>
 
-                <!-- Grid of Cards-->
                 <form id="booking-form">
                     <div class="card-grid">
-                        <div class="booking-card">
+                        <div class="booking-card w3-card">
                             <div class="booking-group">
                                 <h3 id="start" class="quarter-margin">Pet Information:</h3>
 
@@ -121,10 +120,8 @@
                                     <div class="number-input">
                                         <button type="button" class="number-btn"
                                             onclick="this.parentNode.querySelector('input').stepDown(); updateSummary()">−</button>
-
                                         <input type="number" id="age" required min="1" max="40" value="1"
                                             onkeydown="return ['Backspace','Tab','ArrowLeft','ArrowRight'].includes(event.key) || /[0-9]/.test(event.key)">
-
                                         <button type="button" class="number-btn"
                                             onclick="this.parentNode.querySelector('input').stepUp(); updateSummary()">+</button>
                                     </div>
@@ -187,13 +184,12 @@
 
                                 <div class="booking-field stacked">
                                     <label for="datetime">Appointment Date & Time:</label>
-                                    <input type="datetime-local" id="datetime" class="appointment-date-input"
-                                        required>
+                                    <input type="datetime-local" id="datetime" class="appointment-date-input" required>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="booking-card vertical">
+                        <div class="booking-card vertical w3-card">
                             <h3 id="addons" class="quarter-margin">Add-on Options:</h3>
 
                             <!-- Grid of Cards-->
@@ -238,15 +234,12 @@
 
                             <h3 class="quarter-margin">Booking Details:</h3>
 
-                            <p class="quarter-margin mobile-margin">Service Type: <span id="summary-service">—</span>
-                            </p>
-                            <p class="quarter-margin mobile-margin">Appointment Details: <span
-                                    id="summary-appointment">—</span></p>
-                            <p class="quarter-margin mobile-margin">Add-ons: <span id="summary-addons">No add-ons</span>
-                            </p>
+                            <p class="quarter-margin mobile-margin">Service Type: <span id="summary-service">—</span></p>
+                            <p class="quarter-margin mobile-margin">Appointment Details: <span id="summary-appointment">—</span></p>
+                            <p class="quarter-margin mobile-margin">Add-ons: <span id="summary-addons">No add-ons</span></p>
                             <p class="half-margin">Total Cost: <span id="summary-cost">$0</span></p>
 
-                            <button type="submit" class="button dark submit-btn">Book Appointment</button>
+                            <button type="submit" class="button dark w3-button submit-btn">Book Appointment</button>
                         </div>
                     </div>
                 </form>
@@ -255,12 +248,11 @@
     </main>
 
     <!-- Footer Bar -->
-    <footer>
+    <footer class="w3-bar">
         <p>©2026 Snazzy Paws Grooming, All rights reserved.</p>
         <p>Mon-Fri: 8am-6pm · Sat: 9am-2pm · Sun: Closed</p>
         <p>LOG-IN</p>
     </footer>
-
 
     <!-- Link JS -->
     <script src="js/main.js"></script>
