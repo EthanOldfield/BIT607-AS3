@@ -870,6 +870,12 @@ section.w3-container
     padding: 4rem !important;
 }
 
+.service-card.w3-card
+{
+    box-shadow: none !important;
+    padding: 2rem !important;
+}
+
 
 @media (max-width:768px) {
     .scroll-top-btn.visible {
