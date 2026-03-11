@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Snazzy Paws Grooming Services.">
+
+    <!-- Document Title + Icon -->
+    <title>Services</title>
+    <link rel="Icon" type="image/x-icon" href="images/icons/young_dog.svg">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <header class="w3-bar">
+        <!-- Icon + Title -->
+        <h2 class="header-title">
+            <a href="index.html" class="home-link">
+                <img src="images/icons/paw.svg" alt="Snazzy Paws Logo" class="nav-icon">
+
+                <span class="full-title">Snazzy Paws Grooming</span>
+                <span class="short-title">Snazzy Paws</span>
+            </a>
+        </h2>
+
+        <!-- Navigation Buttons -->
+        <div class="button-group desktop-nav w3-bar-item">
+            <button id="theme-toggle" class="theme-toggle-btn">
+                <img src="images/icons/moon.svg" alt="Toggle dark mode" class="theme-icon">
+            </button>
+            <a href="gallery.html" class="w3-button">Gallery</a>
+            <a href="services.html" class="w3-button">View Services</a>
+            <a href="contact.html" class="w3-button">Contact Us</a>
+            <a href="privacy.html" class="w3-button">Privacy Policy</a>
+            <a href="staff-roster.html" class="w3-button">Staff Roster</a>
+            <a href="booking.html" class="dark w3-button">Book Now</a>
+        </div>
+
+        <!-- Mobile dropdown button -->
+        <div class="mobile-nav w3-bar-item">
+            <button id="theme-toggle-mobile" class="theme-toggle-btn">
+                <img src="images/icons/moon.svg" alt="Toggle dark mode" class="theme-icon">
+            </button>
+            <button id="mobile-menu-toggle">☰</button>
+            <div id="mobile-menu" class="mobile-menu hidden">
+                <a href="gallery.html" class="w3-button">Gallery</a>
+                <a href="services.html" class="w3-button">View Services</a>
+                <a href="contact.html" class="w3-button">Contact Us</a>
+                <a href="privacy.html" class="w3-button">Privacy Policy</a>
+                <a href="staff-roster.html" class="w3-button">Staff Roster</a>
+                <a href="booking.html" class="dark w3-button">Book Now</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Core Page Content -->
+    <main>
+        <!-- Welcome Section (introduction and initial image) -->
+        <section class="w3-container">
+            <div class="section-inner center-hero">
+                <h1 class="center-text">Staff Roster</h1>
+                <p class="center-text header-margin">Book your appointment today.</p>
+                <div class="button-group">
+                    <a href="booking.html" class="dark w3-button">Book Appointment</a>
+                    <a href="contact.html" class="w3-button">Contact Us</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="dark w3-container">
+            <div class="section-inner">
+                <h2 class="center-text header-margin">Our Grooming Services</h2>
+
+                <!-- Grid of Cards-->
+                <div class="card-grid">
+                    <div class="service-card w3-card" onclick="location.href='booking.html?package=haircut#start'">
+                        <picture>
+                            <source srcset="
+                                images/gallery//dog_sunglasses_low.webp 480w,
+                                images/gallery//dog_sunglasses_medium.webp 768w,
+                                images/gallery//dog_sunglasses_full.webp 2000w" sizes="
+                                    (max-width: 480px) 480px,
+                                    (max-width: 768px) 768px,
+                                    2000px" type="image/webp">
+
+                            <img src="images/gallery//dog_sunglass_full.webp" class="placeholder-image"
+                                alt="Dog wearing sunglasses" loading="lazy">
+                        </picture>
+                        <a href="https://www.freepik.com/free-photo/studio-portrait-fashionable-schnauzer-dogs-dressed-blue-shirt-sunglasses_24403038.htm"
+                            class="image-credit quarter-margin">Image by fxquadro on Freepik</a>
+
+                        <h3 class="quarter-margin">Haircuts & Styling</h3>
+                        <p class="quarter-margin">Breed specific cuts and custom styling to suit your pet's look.</p>
+                        <p style="color: var(--text-primary)"><strong>Starting at $25</strong></p>
+                        <p class="click-hint">Click to book →</p>
+                    </div>
+
+                    <div class="service-card w3-card" onclick="location.href='booking.html?package=spa#start'">
+                        <picture>
+                            <source srcset="
+                                images/gallery//dog_wash_low.webp 480w,
+                                images/gallery//dog_wash_medium.webp 768w,
+                                images/gallery//dog_wash_full.webp 2000w" sizes="
+                                    (max-width: 480px) 480px,
+                                    (max-width: 768px) 768px,
+                                    2000px" type="image/webp">
+
+                            <img src="images/gallery//dog_wash_full.webp" class="placeholder-image"
+                                alt="Dog getting washed with soap" loading="lazy">
+                        </picture>
+                        <a href="https://www.freepik.com/free-photo/washing-pet-dog-home_30994379.htm"
+                            class="image-credit quarter-margin">Image by freepik</a>
+
+                        <h3 class="quarter-margin">Spa Treatments</h3>
+                        <p class="quarter-margin">Relaxing massages, oatmeal baths, and skin conditioning.</p>
+                        <p style="color: var(--text-primary)"><strong>Starting at $20</strong></p>
+                        <p class="click-hint">Click to book →</p>
+                    </div>
+
+                    <div class="service-card w3-card" onclick="location.href='booking.html?package=brushing#start'">
+                        <picture>
+                            <source srcset="
+                                images/gallery//dog_brushing_low.webp 480w,
+                                images/gallery//dog_brushing_medium.webp 768w,
+                                images/gallery//dog_brushing_normal.webp 2000w" sizes="
+                                    (max-width: 480px) 480px,
+                                    (max-width: 768px) 768px,
+                                    2000px" type="image/webp">
+
+                            <img src="images/gallery//dog_brushing_normal.webp" class="placeholder-image"
+                                alt="Dog getting brushed" loading="lazy">
+                        </picture>
+                        <a href="https://www.freepik.com/free-photo/front-view-woman-with-chihuahua-dog_39701776.htm#fromView=search&page=1&position=11&uuid=081c084e-f704-489f-8abb-c65d314a43be&query=dog+brush"
+                            class="image-credit quarter-margin">Image by freepik</a>
+
+                        <h3 class="quarter-margin">Brushing & De-shed</h3>
+                        <p class="quarter-margin">Intensive undercoat removal to reduce shedding around the home.</p>
+                        <p style="color: var(--text-primary)"><strong>Starting at $20</strong></p>
+                        <p class="click-hint">Click to book →</p>
+                    </div>
+
+                    <div class="service-card w3-card" onclick="location.href='booking.html?package=full#start'">
+                        <picture>
+                            <source srcset="
+                                images/gallery//dog_haircut_low.webp 480w,
+                                images/gallery//dog_haircut_medium.webp 768w,
+                                images/gallery//dog_haircut_normal.webp 2000w" sizes="
+                                    (max-width: 480px) 480px,
+                                    (max-width: 768px) 768px,
+                                    2000px" type="image/webp">
+
+                            <img src="images/gallery//dog_sunglass_normal.webp" class="placeholder-image"
+                                alt="Dog getting haircut" loading="lazy">
+                        </picture>
+                        <a href="https://www.freepik.com/free-photo/haircuting-process-small-dog-sits-table-dog-with-professional_17066192.htm#fromView=search&page=1&position=3&uuid=f922d2df-777f-47f3-a790-6fd4cc910935&query=dog+haircut"
+                            class="image-credit quarter-margin">Image by prostooleh on Freepik</a>
+
+                        <h3 class="quarter-margin">Full Grooming</h3>
+                        <p class="quarter-margin">Complete bath, dry, brush, nail trim, and ear cleaning.</p>
+                        <p style="color: var(--text-primary)"><strong>Starting at $50</strong></p>
+                        <p class="click-hint">Click to book →</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Specialized Packages Section -->
+        <section class="w3-container">
+            <div class="section-inner">
+                <h2 class="center-text header-margin">Specialized Packages</h2>
+
+                <!-- Grid of Cards-->
+                <div class="card-grid">
+                    <div class="service-card w3-card">
+                        <div class="icon-circle">
+                            <img src="images/icons/young_dog.svg" alt="Young Puppy Icon">
+                        </div>
+                        <h3 class="center-text">Puppies</h3>
+                        <p class="center-text half-margin">Gentle grooming experiences focused on calmness and comfort.</p>
+                        <h4 class="center-text">+$30 - $40</h4>
+                    </div>
+
+                    <div class="service-card w3-card">
+                        <div class="icon-circle">
+                            <img src="images/icons/adult_dog.svg" alt="Adult Dog Icon">
+                        </div>
+                        <h3 class="center-text">Adults</h3>
+                        <p class="center-text half-margin">Full service grooming for adult dogs.</p>
+                        <h4 class="center-text">+$40 - $50</h4>
+                    </div>
+
+                    <div class="service-card w3-card">
+                        <div class="icon-circle">
+                            <img src="images/icons/elderly_dog.svg" alt="Old Dog Icon">
+                        </div>
+                        <h3 class="center-text">Seniors</h3>
+                        <p class="center-text half-margin">Extra care when handling, padding and pillow, and shorter
+                            sessions.</p>
+                        <h4 class="center-text">+$50 - $60</h4>
+                    </div>
+
+                    <div class="service-card w3-card">
+                        <div class="icon-circle">
+                            <img src="images/icons/medical.svg" alt="Sick Dog Icon">
+                        </div>
+                        <h3 class="center-text">Special Needs</h3>
+                        <p class="center-text half-margin">Personalized care for anxiety, mobility issues, or medical
+                            conditions.</p>
+                        <h4 class="center-text">+$30</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Available Add-ons Section -->
+        <section class="dark w3-container">
+            <div class="section-inner">
+                <h2 class="center-text header-margin">Available Add-ons</h2>
+
+                <!-- Grid of Cards-->
+                <div class="card-grid minimal-grid">
+                    <div class="service-card minimal clickable w3-card"
+                        onclick="location.href='booking.html?addon=addon-flea#addons'">
+                        <span class="card-click-hint">↗</span>
+                        <div class="bullet-item">
+                            <div class="card-bullet"></div>
+                            <p>$20 - Flea & Tick Treatment</p>
+                        </div>
+                    </div>
+
+                    <div class="service-card minimal clickable w3-card"
+                        onclick="location.href='booking.html?addon=addon-deshed#addons'">
+                        <span class="card-click-hint">↗</span>
+                        <div class="bullet-item">
+                            <div class="card-bullet"></div>
+                            <p>$20 - De-shedding Ultra</p>
+                        </div>
+                    </div>
+
+                    <div class="service-card minimal clickable w3-card"
+                        onclick="location.href='booking.html?addon=addon-ear#addons'">
+                        <span class="card-click-hint">↗</span>
+                        <div class="bullet-item">
+                            <div class="card-bullet"></div>
+                            <p>$20 - Ear Cleaning</p>
+                        </div>
+                    </div>
+
+                    <div class="service-card minimal clickable w3-card"
+                        onclick="location.href='booking.html?addon=addon-nail#addons'">
+                        <span class="card-click-hint">↗</span>
+                        <div class="bullet-item">
+                            <div class="card-bullet"></div>
+                            <p>$20 - Nail Trimming (Clippers)</p>
+                        </div>
+                    </div>
+
+                    <div class="service-card minimal clickable w3-card"
+                        onclick="location.href='booking.html?addon=addon-teeth#addons'">
+                        <span class="card-click-hint">↗</span>
+                        <div class="bullet-item">
+                            <div class="card-bullet"></div>
+                            <p>$20 - Teeth Brushing</p>
+                        </div>
+                    </div>
+
+                    <div class="service-card minimal clickable w3-card"
+                        onclick="location.href='booking.html?addon=addon-massage#addons'">
+                        <span class="card-click-hint">↗</span>
+                        <div class="bullet-item">
+                            <div class="card-bullet"></div>
+                            <p>$20 - Massage</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Care Guidelines & Warnings Section -->
+        <section class="w3-container">
+            <div class="section-inner">
+                <h2 class="center-text header-margin">Care Guidelines & Warnings</h2>
+
+                <!-- Grid of Cards-->
+                <div class="card-grid">
+                    <div class="service-card w3-card">
+                        <h3 class="center-text">Breed Specifics</h3>
+                        <p class="center-text">Certain breeds may require alternative de-shedding techniques.</p>
+                    </div>
+
+                    <div class="service-card w3-card">
+                        <h3 class="center-text">Age Considerations</h3>
+                        <p class="center-text">Seniors can have frequent rest breaks.</p>
+                    </div>
+
+                    <div class="service-card w3-card center-text">
+                        <h3 class="center-text">Temperament</h3>
+                        <p class="center-text">Inform staff if your pet is prone to anxiety,
+                            aggressiveness, or loud noises.
+                        </p>
+                    </div>
+
+                    <div class="service-card w3-card center-text">
+                        <h3 class="center-text">Medical Conditions</h3>
+                        <p class="center-text">Disclose medical conditions or recent surgeries before booking.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Table Section -->
+        <section class="w3-container">
+            <div class="section-inner">
+                <h2 class="center-text header-margin">Pricing</h2>
+
+                <table class="pricing-table w3-table">
+                    <thead>
+                        <tr>
+                            <th>Service</th>
+                            <th>Description</th>
+                            <th>Age Group</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Haircut & Styling</td>
+                            <td>Breed-specific cuts and custom styling</td>
+                            <td>All ages</td>
+                            <td>From $25</td>
+                        </tr>
+                        <tr>
+                            <td>Spa Treatment</td>
+                            <td>Massage, oatmeal bath, skin conditioning</td>
+                            <td>All ages</td>
+                            <td>From $20</td>
+                        </tr>
+                        <tr>
+                            <td>Brushing & De-shed</td>
+                            <td>Intensive undercoat removal</td>
+                            <td>All ages</td>
+                            <td>From $20</td>
+                        </tr>
+                        <tr>
+                            <td>Full Grooming</td>
+                            <td>Bath, dry, brush, nail trim, ear cleaning</td>
+                            <td>All ages</td>
+                            <td>From $50</td>
+                        </tr>
+                        <tr class="rowspan-row">
+                            <td rowspan="4">Age Surcharge</td>
+                            <td class="row-title">Puppy (0–3 years)</td>
+                            <td>Puppy</td>
+                            <td>+$30–$40</td>
+                        </tr>
+                        <tr class="rowspan-row">
+                            <td>Adult (4–7 years)</td>
+                            <td>Adult</td>
+                            <td>+$40–$50</td>
+                        </tr>
+                        <tr class="rowspan-row">
+                            <td>Senior (8–10 years)</td>
+                            <td>Senior</td>
+                            <td>+$50–$60</td>
+                        </tr>
+                        <tr class="rowspan-row">
+                            <td>Special Needs</td>
+                            <td>Medical / anxiety</td>
+                            <td>+$30</td>
+                        </tr>
+                        <tr class="rowspan-row">
+                            <td rowspan="6">Add-ons</td>
+                            <td class="row-title">Flea & Tick Treatment</td>
+                            <td>All ages</td>
+                            <td>$20</td>
+                        </tr>
+                        <tr class="rowspan-row">
+                            <td>De-shedding Ultra</td>
+                            <td>All ages</td>
+                            <td>$20</td>
+                        </tr>
+                        <tr class="rowspan-row">
+                            <td>Ear Cleaning</td>
+                            <td>All ages</td>
+                            <td>$20</td>
+                        </tr>
+                        <tr class="rowspan-row">
+                            <td>Nail Trimming</td>
+                            <td>All ages</td>
+                            <td>$20</td>
+                        </tr>
+                        <tr class="rowspan-row">
+                            <td>Teeth Brushing</td>
+                            <td>All ages</td>
+                            <td>$20</td>
+                        </tr>
+                        <tr class="rowspan-row">
+                            <td>Massage</td>
+                            <td>All ages</td>
+                            <td>$20</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <div class="scroll-top-wrapper">
+            <button class="scroll-top-btn" id="scroll-top-btn"
+                onclick="window.scrollTo({top:0, behavior:'smooth'})">↑</button>
+        </div>
+    </main>
+
+    <!-- Footer Bar -->
+    <footer class="w3-bar">
+        <p>©2026 Snazzy Paws Grooming, All rights reserved.</p>
+        <p>Mon-Fri: 8am-6pm · Sat: 9am-2pm · Sun: Closed</p>
+        <p>LOG-IN</p>
+    </footer>
+
+    <!-- Link JS -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
