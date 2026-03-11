@@ -1039,7 +1039,7 @@ header.w3-bar .w3-bar-item
 }
 
 /* Separate nav bar compressing point */
-@media (max-width:1150px)
+@media (max-width:1500px)
 {
     .desktop-nav {
         display: none !important
