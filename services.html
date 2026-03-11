@@ -4,17 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Snazzy Paws Grooming Services.">
 
     <!-- Document Title + Icon -->
     <title>Services</title>
     <link rel="Icon" type="image/x-icon" href="images/icons/young_dog.svg">
 
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <link rel="stylesheet" href="styles/new_css.css">
 </head>
 
 <body>
     <!-- Navigation Bar -->
-    <header>
+    <header class="w3-bar">
         <!-- Icon + Title -->
         <h2 class="header-title">
             <a href="index.html" class="home-link">
@@ -26,28 +28,27 @@
         </h2>
 
         <!-- Navigation Buttons -->
-        <div class="button-group desktop-nav">
+        <div class="button-group desktop-nav w3-bar-item">
             <button id="theme-toggle" class="theme-toggle-btn">
                 <img src="images/icons/moon.svg" alt="Toggle dark mode" class="theme-icon">
             </button>
-            <a href="gallery.html" class="button">Gallery</a>
-            <a href="services.html" class="button">View Services</a>
-            <a href="contact.html" class="button">Contact Us</a>
-            <a href="booking.html" class="button dark">Book Now</a>
+            <a href="gallery.html" class="button w3-button">Gallery</a>
+            <a href="services.html" class="button w3-button">View Services</a>
+            <a href="contact.html" class="button w3-button">Contact Us</a>
+            <a href="booking.html" class="button dark w3-button">Book Now</a>
         </div>
 
         <!-- Mobile dropdown button -->
-        <div class="mobile-nav">
+        <div class="mobile-nav w3-bar-item">
             <button id="theme-toggle-mobile" class="theme-toggle-btn">
                 <img src="images/icons/moon.svg" alt="Toggle dark mode" class="theme-icon">
             </button>
-
             <button id="mobile-menu-toggle">☰</button>
             <div id="mobile-menu" class="mobile-menu hidden">
-                <a href="gallery.html" class="button">Gallery</a>
-                <a href="services.html" class="button">View Services</a>
-                <a href="contact.html" class="button">Contact Us</a>
-                <a href="booking.html" class="button dark">Book Now</a>
+                <a href="gallery.html" class="button w3-button">Gallery</a>
+                <a href="services.html" class="button w3-button">View Services</a>
+                <a href="contact.html" class="button w3-button">Contact Us</a>
+                <a href="booking.html" class="button dark w3-button">Book Now</a>
             </div>
         </div>
     </header>
@@ -55,14 +56,13 @@
     <!-- Core Page Content -->
     <main>
         <!-- Welcome Section (introduction and initial image) -->
-        <section>
+        <section class="w3-container">
             <div class="section-inner center-hero">
                 <h1 class="center-text">Done viewing our services?</h1>
-                <p class="center-text header-margin">Book your appointment today.</P>
-
+                <p class="center-text header-margin">Book your appointment today.</p>
                 <div class="button-group">
-                    <a href="booking.html" class="button dark">Book Appointment</a>
-                    <a href="contact.html" class="button">Contact Us</a>
+                    <a href="booking.html" class="button dark w3-button">Book Appointment</a>
+                    <a href="contact.html" class="button w3-button">Contact Us</a>
                 </div>
             </div>
         </section>
@@ -418,7 +418,7 @@
     </main>
 
     <!-- Footer Bar -->
-    <footer>
+    <footer class="w3-bar">
         <p>©2026 Snazzy Paws Grooming, All rights reserved.</p>
         <p>Mon-Fri: 8am-6pm · Sat: 9am-2pm · Sun: Closed</p>
         <p>LOG-IN</p>
