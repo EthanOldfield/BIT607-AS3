@@ -995,7 +995,7 @@ header.w3-bar .w3-bar-item
     }
 
     .split>.card {
-        padding: .5rem
+        padding: .5rem !important
     }
 
     .status-container {
