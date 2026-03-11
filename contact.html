@@ -4,51 +4,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Snazzy Paws Grooming Services.">
 
     <!-- Document Title + Icon -->
     <title>Contact</title>
     <link rel="Icon" type="image/x-icon" href="images/icons/young_dog.svg">
 
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <link rel="stylesheet" href="styles/new_css.css">
     <link rel="stylesheet" href="styles/booking.css">
 </head>
 
 <body>
     <!-- Navigation Bar -->
-    <header>
+    <header class="w3-bar">
         <!-- Icon + Title -->
-        <h2 class="header-title">
+        <h2 class="header-title w3-bar-item">
             <a href="index.html" class="home-link">
                 <img src="images/icons/paw.svg" alt="Snazzy Paws Logo" class="nav-icon">
-
                 <span class="full-title">Snazzy Paws Grooming</span>
                 <span class="short-title">Snazzy Paws</span>
             </a>
         </h2>
 
         <!-- Navigation Buttons -->
-        <div class="button-group desktop-nav">
+        <div class="button-group desktop-nav w3-bar-item">
             <button id="theme-toggle" class="theme-toggle-btn">
                 <img src="images/icons/moon.svg" alt="Toggle dark mode" class="theme-icon">
             </button>
-            <a href="gallery.html" class="button">Gallery</a>
-            <a href="services.html" class="button">View Services</a>
-            <a href="contact.html" class="button">Contact Us</a>
-            <a href="booking.html" class="button dark">Book Now</a>
+            <a href="gallery.html" class="button w3-button">Gallery</a>
+            <a href="services.html" class="button w3-button">View Services</a>
+            <a href="contact.html" class="button w3-button">Contact Us</a>
+            <a href="booking.html" class="button dark w3-button">Book Now</a>
         </div>
 
         <!-- Mobile dropdown button -->
-        <div class="mobile-nav">
+        <div class="mobile-nav w3-bar-item">
             <button id="theme-toggle-mobile" class="theme-toggle-btn">
                 <img src="images/icons/moon.svg" alt="Toggle dark mode" class="theme-icon">
             </button>
-
             <button id="mobile-menu-toggle">☰</button>
             <div id="mobile-menu" class="mobile-menu hidden">
-                <a href="gallery.html" class="button">Gallery</a>
-                <a href="services.html" class="button">View Services</a>
-                <a href="contact.html" class="button">Contact Us</a>
-                <a href="booking.html" class="button dark">Book Now</a>
+                <a href="gallery.html" class="button w3-button">Gallery</a>
+                <a href="services.html" class="button w3-button">View Services</a>
+                <a href="contact.html" class="button w3-button">Contact Us</a>
+                <a href="booking.html" class="button dark w3-button">Book Now</a>
             </div>
         </div>
     </header>
@@ -57,14 +57,13 @@
     <main>
 
         <!-- Contact Form Section -->
-        <section class="dark">
+        <section class="dark w3-container">
             <div class="section-inner">
                 <h1 class="center-text header-margin">Contact Us</h1>
 
-                <!-- Grid of Cards-->
                 <form id="boooking-form">
                     <div class="card-grid">
-                        <div class="booking-card">
+                        <div class="booking-card w3-card">
                             <div class="booking-group">
                                 <h2 class="quarter-margin">Your Details:</h2>
 
@@ -92,7 +91,7 @@
                                         required></textarea>
                                 </div>
 
-                                <button type="submit" class="button dark submit-btn">Book Appointment</button>
+                                <button type="submit" class="button dark w3-button submit-btn">Book Appointment</button>
                             </div>
 
                             <div class="booking-group">
@@ -102,11 +101,9 @@
                                     <div class="contact-card-icon-holder">
                                         <img src="images/icons/phone.svg" alt="" class="contact-card-icon">
                                     </div>
-
                                     <div class="contact-card-text">
                                         <span class="contact-card-title">Main Clinic</span>
-                                        <span class="contact-card-detail">12B Dogwash Drive, Suite 123<br>Hamilton, New
-                                            Zealand</span>
+                                        <span class="contact-card-detail">12B Dogwash Drive, Suite 123<br>Hamilton, New Zealand</span>
                                     </div>
                                 </div>
 
@@ -114,7 +111,6 @@
                                     <div class="contact-card-icon-holder">
                                         <img src="images/icons/map_pin.svg" alt="" class="contact-card-icon">
                                     </div>
-
                                     <div class="contact-card-text">
                                         <span class="contact-card-title">Email</span>
                                         <span class="contact-card-detail">contact@snazzypaws.nz</span>
@@ -125,7 +121,6 @@
                                     <div class="contact-card-icon-holder">
                                         <img src="images/icons/map_pin.svg" alt="" class="contact-card-icon">
                                     </div>
-
                                     <div class="contact-card-text half-margin">
                                         <span class="contact-card-title">Phone</span>
                                         <span class="contact-card-detail">+64 022-123-4567</span>
@@ -145,17 +140,16 @@
         </section>
 
         <!-- Open Hours + Salon Location Section -->
-        <section>
+        <section class="w3-container">
             <div class="split">
                 <!-- Open Hours Card -->
-                <div class="card">
+                <div class="card w3-card">
                     <h2>Opening Hours</h2>
                     <p>Please check our schedule before visiting.</p>
 
                     <!-- Status Indicator -->
                     <div class="status-container">
                         <div class="status-bullet"></div>
-
                         <div class="status-card open">
                             <span>Open Now</span>
                         </div>
@@ -179,7 +173,7 @@
                 </div>
 
                 <!-- Salon Location Card -->
-                <div class="card">
+                <div class="card w3-card">
                     <div>
                         <h2>Location</h2>
                         <p>Enquire in person for personalized assistance.</p>
@@ -210,12 +204,11 @@
     </main>
 
     <!-- Footer Bar -->
-    <footer>
+    <footer class="w3-bar">
         <p>©2026 Snazzy Paws Grooming, All rights reserved.</p>
         <p>Mon-Fri: 8am-6pm · Sat: 9am-2pm · Sun: Closed</p>
         <p>LOG-IN</p>
     </footer>
-
 
     <!-- Link JS -->
     <script src="js/main.js"></script>
