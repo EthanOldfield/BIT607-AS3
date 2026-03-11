@@ -123,6 +123,13 @@ header {
     border-bottom: 1px solid var(--border)
 }
 
+/* Disable w3-bar positioning (it's very ugly) */
+header.w3-bar::before,
+header.w3-bar::after
+{
+    display: none !important;
+}
+
 footer {
     position: relative;
     padding: 1.5rem;
