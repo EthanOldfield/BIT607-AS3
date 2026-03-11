@@ -876,6 +876,12 @@ section.w3-container
     padding: 2rem !important;
 }
 
+footer.w3-bar::before,
+footer.w3-bar::after
+{
+    display: none !important;
+}
+
 
 @media (max-width:768px) {
     .scroll-top-btn.visible {
