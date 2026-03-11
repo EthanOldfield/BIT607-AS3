@@ -130,9 +130,23 @@ header {
     border-bottom: 1px solid var(--border)
 }
 
+/* Make nav display everything in one line */
+header.w3-bar .w3-bar-item
+{
+    padding: 0 !important;
+    float: none !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
 /* Disable w3-bar positioning (it's very ugly) */
 header.w3-bar::before,
 header.w3-bar::after
+{
+    display: none !important;
+}
+
+header.w3-bar .mobile-nav.w3-bar-item
 {
     display: none !important;
 }
@@ -1014,6 +1028,16 @@ img.placeholder-image {
     [data-theme="dark"] .pricing-table tr:nth-child(even) td:first-child,
     [data-theme="dark"] .pricing-table td.row-title {
         background-color: var(--bg-gap)
+    }
+
+    header.w3-bar .desktop-nav.w3-bar-item
+    {
+        display: none !important;
+    }
+
+    header.w3-bar .mobile-nav.w3-bar-item
+    {
+        display: flex !important;
     }
 }
 
