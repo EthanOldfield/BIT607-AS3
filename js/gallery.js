@@ -187,7 +187,7 @@ function buildGrid(containerId, images)
     images.forEach(img =>
     {
         const card = document.createElement('div');
-        card.className = 'service-card';
+        card.className = 'service-card w3-card';
         card.innerHTML = buildSlide(img);
         grid.appendChild(card);
     });
