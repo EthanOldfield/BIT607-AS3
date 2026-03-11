@@ -925,52 +925,6 @@ header.w3-bar .w3-bar-item
         font-weight: 700
     }
 
-    .desktop-nav {
-        display: none !important
-    }
-
-    .mobile-nav {
-        display: flex
-    }
-
-    .mobile-menu {
-        position: absolute;
-        top: 4rem;
-        right: 0;
-        background: var(--bg-primary);
-        border: 1px solid var(--border-light);
-        border-radius: 8px;
-        flex-direction: column;
-        display: flex;
-        min-width: 150px;
-        z-index: 100;
-        overflow: hidden
-    }
-
-    .mobile-menu.hidden {
-        display: none
-    }
-
-    .mobile-menu a {
-        height: fit-content;
-        border: none;
-        border-radius: 0;
-        border-bottom: 1px solid var(--border-light);
-        font-size: 1rem !important;
-    }
-
-    .mobile-menu a:last-child {
-        border-bottom: none
-    }
-
-    #mobile-menu-toggle {
-        background: none;
-        border: none;
-        font-size: 1.5rem !important;
-        cursor: pointer;
-        color: var(--text-primary)
-    }
-
     h1,
     h2,
     h3,
@@ -1078,6 +1032,61 @@ header.w3-bar .w3-bar-item
         background-color: var(--bg-gap)
     }
 
+    section.w3-container
+    {
+        padding: 2rem !important;
+    }
+}
+
+/* Separate nav bar compressing point */
+@media (max-width:1150px)
+{
+    .desktop-nav {
+        display: none !important
+    }
+
+    .mobile-nav {
+        display: flex
+    }
+
+    .mobile-menu {
+        position: absolute;
+        top: 4rem;
+        right: 0;
+        background: var(--bg-primary);
+        border: 1px solid var(--border-light);
+        border-radius: 8px;
+        flex-direction: column;
+        display: flex;
+        min-width: 150px;
+        z-index: 100;
+        overflow: hidden
+    }
+
+    .mobile-menu.hidden {
+        display: none
+    }
+
+    .mobile-menu a {
+        height: fit-content;
+        border: none;
+        border-radius: 0;
+        border-bottom: 1px solid var(--border-light);
+        font-size: 1rem !important;
+    }
+
+    .mobile-menu a:last-child {
+        border-bottom: none
+    }
+
+    #mobile-menu-toggle {
+        background: none;
+        border: none;
+        font-size: 1.5rem !important;
+        cursor: pointer;
+        color: var(--text-primary)
+    }
+
     header.w3-bar .desktop-nav.w3-bar-item
     {
         display: none !important;
@@ -1086,11 +1095,6 @@ header.w3-bar .w3-bar-item
     header.w3-bar .mobile-nav.w3-bar-item
     {
         display: flex !important;
-    }
-
-    section.w3-container
-    {
-        padding: 2rem !important;
     }
 }
 
