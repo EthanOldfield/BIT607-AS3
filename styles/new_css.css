@@ -857,6 +857,20 @@ img.placeholder-image {
     background-color: var(--bg-button-hover)
 }
 
+
+/* W3.CSS adjustments (temp) */
+.card.w3-card
+{
+    padding: 2rem !important;
+    box-shadow: none !important;
+}
+
+section.w3-container
+{
+    padding: 4rem !important;
+}
+
+
 @media (max-width:768px) {
     .scroll-top-btn.visible {
         display: flex;
